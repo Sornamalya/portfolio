@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <title>Sornamalya</title>
+</head>
+<body>
+   <div class="container-xl" >
+        <div class="row" id="navbar">
+            <div class="col-md-6 col-6" id="navbrand">
+                 <div class="brand">
+                    <a href=""><h3>Portfolio</h3></a>
+                 </div>
+              
+            </div>
+            <div class="col-md-6 col-6 navlink" >
+                <a href="#navbar" class="hideonmob">Home</a>
+                  <a href="#abtrow" class="hideonmob">About</a>
+                  <a href="#skills" class="hideonmob">Skills</a>
+                   <a href="#projects" class="hideonmob">Projects</a>
+                    <a href="#contact" class="hideonmob">Contact</a>
+                   <button class="menubtn" onclick=showsidebar()><i class="fa-solid fa-bars"></i></button> 
+             
+             </div>
+         </div>
+          <div class="sidebar">
+                    <button id="closebtn" onClick=hidesidebar()><i class="fa-solid fa-xmark" ></i></button>
+                    <a href="#navbar">Home</a>
+                    <a href="#abtrow">About</a>
+                    <a href="#skills">Skills</a>
+                     <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+           
+         </div>
+         <div class="row" id="profile">
+
+            <div class=" col-6 slide-in-left" id="circle-img"  >
+                <img src="images/sorna.jpg" alt="sorna_image" class="floating-img" >
+            </div>
+             <div class="col-12 col-xl-6 slide-in-right" > 
+                <h3 style="margin-top: 20px;">Hi,Myself <h1 style="margin-top: 20px;">Sornamalya</h1></h3>
+                <h3 style="margin-top: 20px;" class="typewriter">And I'm a <span >Full Stack Developer!</span></h3>
+                <p>An aspiring Full Stack Java Developer with a strong passion for building elegant, user-friendly, and efficient web applications. I enjoy crafting seamless user experiences while writing clean, maintainable code that brings ideas to life.</p>
+                <div style="margin-top: 40px;">
+
+                    <a href="https://www.linkedin.com/in/sornamalya-l-015703228" target="_blank" id="soc-icon"><i class="fa-brands fa-linkedin" ></i></a>
+                    <a href="https://github.com/Sornamalya" target="_blank" id="soc-icon"><i class="fa-brands fa-github"></i></a>
+                    
+                </div>
+                <a href="./Sornamalya_Resume.pdf" target="_blank"> <button>Resume</button></a>
+                   
+              
+            </div>
+         </div>
+         <!-- about me -->
+          <div class="row" id="abtrow">
+            <div class="col abt-head slide-in-left">
+                    <h1>About Me</h2>
+                <div class="abt-text">
+                    <h2>Full Stack Java Developer</h2>
+                    
+                     <p>My journey into tech began with a curiosity for how websites work behind the scenes. As I explored HTML and JavaScript, I quickly developed a passion for creating interactive applications. Today, I’m focused on mastering backend development with Spring Boot and building complete web solutions.I hold a B.Tech degree in Computer Science and am currently undergoing Full Stack Java Developer training at Besant Technologies, where I'm sharpening my skills in building real-world applications.
+                     I'm looking forward to working on projects that challenge me and help me grow as a developer. I'm especially interested in roles where I can contribute to both frontend and backend development.Want to connect ? Check out my contact page—I’d love to hear from you!</p>
+                     <a href="#contact" class="btn-link" style="background: transparent;">Connect <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+
+                </div>              
+            </div>       
+            <div class="col abt-img slide-in-right">
+                <img src="images/sorna.jpg" alt="sorna_image" id="abtimg">
+            </div>
+          </div>
+          <!-- skills -->
+           <div id="skills">
+            <h2 style="color: rgb(56, 31, 182); font-weight: bold;">My Skills</h2>
+           <div class="row" id="skillsRow">
+            
+          </div>
+         </div>
+
+         <!-- projects -->
+          <div >
+            <h2 style="color: rgb(56, 31, 182); font-weight: bold;" id="projects">Projects</h2>
+             <div class="row" id="projectsRow">
+            
+          </div>
+          </div>
+
+          <!-- contact -->
+            <h2 style="color: rgb(56, 31, 182); font-weight: bold;text-align: center; margin-bottom: 40px;" id="contact">Contact Me</h2>
+           <div class="formdiv">
+          
+           <form action="https://formspree.io/f/mjkoznyb" method="post" id="contact-form">
+            <div class="row">
+                <div class="col">
+                     <input type="text" value="" placeholder="Full Name" class="input"> 
+
+                </div>
+                <div class="col">
+                     <input type="email" value="" placeholder="Email Address" class="input">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <input type="tel" value="" placeholder="Phone Number" class="input">
+
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col">
+                    <textarea name="message" id="" rows="10" cols="30" placeholder="Your Message" class="input" ></textarea>
+
+                </div>
+            </div>
+           
+                <button id="submitbtn" type="submit">Submit</button>
+           
+             <p id="status"></p>
+
+           </form>
+         
+          </div>
+          <!-- footer -->
+
+          <div class="row" id="footrow" >
+            <div class="col-md-4 col-12 foot">
+                <h2>Contact Us</h2>
+                <a href="mailto:sornamalya08@gmail.com" target="_blank">Email:sornamalya08@gmail.com</a><br>
+                <a href="tel:7339044018" target="_blank">Phone:7339044018</a><br>
+                <a href="https://maps.app.goo.gl/GoVXUwj1sL4sVXSj7" target="_blank" >Location:Velachery,Chennai</a>
+            </div>
+            <div class="col-md-4 col-12 foot" style="margin-bottom: 20px;">
+                  <h2>Quick Links</h2>
+                  <a href="#navbar" >Home</a><br>
+                  <a href="#abtrow" >About</a><br>
+                  <a href="#skills"  >Skills</a><br>
+                  <a href="#projects" >Projects</a><br>
+                  <a href="#contact">Contact</a>
+            </div>
+            <div class="col-md-4 col-12 foot" style="margin-bottom: 20px;">
+                <h2>Follow</h2>
+                <a href="https://www.instagram.com/customized_jewels" target="_blank" ><i class="fa-brands fa-instagram" style="margin-right: 20px; font-size: 30px;"></i></a>
+                 <a href="https://www.linkedin.com/in/sornamalya-l-015703228" target="_blank" style="font-size: 30px;" ><i class="fa-brands fa-linkedin" ></i></a>
+               
+            </div>
+
+          </div>
+          <div class="row" id="copyright">
+           <p>© 2025 Sornamalya. All Rights Reserved.</p>
+          </div>
+          
+
+
+     </div>  <!--container ending -->
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+   <script src="index.js"></script>
+ 
+</body>
+</html>
